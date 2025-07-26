@@ -1,9 +1,26 @@
+// import React from "react";
+// import Routes from "./Routes";
+
+// function App() {
+//   return (
+//     <Routes />
+//   );
+// }
+// export default App;
+
+
+
 import React from "react";
+import { Provider } from "react-redux";
+import { store } from "./store/store";
 import Routes from "./Routes";
 
 function App() {
   return (
-    <Routes />
+    <Provider store={store}>
+      <Routes />
+    </Provider>
   );
 }
+
 export default App;
